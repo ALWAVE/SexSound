@@ -1,0 +1,8 @@
+Frontend/auto-sound/node_modules/
+Frontend/auto-sound/.next/
+Frontend/auto-sound/.env
+
+**/bin/
+**/obj/
+*.pdb
+*.dll

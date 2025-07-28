@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: product_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespw
+      POSTGRES_DB: products_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  productservice:
+    build:
+      context: .
+      dockerfile: ProductService.API/Dockerfile
+    container_name: product_service
+    depends_on:
+      - postgres
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=products_db;Username=postgres;Password=postgrespw
+    ports:
+      - "8080:80"
+    working_dir: /app
+
+volumes:
+  pgdata:
