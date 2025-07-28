@@ -7,6 +7,7 @@ COPY ProductService.API/*.csproj ./ProductService.API/
 COPY ProductService.Application/*.csproj ./ProductService.Application/
 COPY ProductService.Domain/*.csproj ./ProductService.Domain/
 COPY ProductService.Infrastructure/*.csproj ./ProductService.Infrastructure/
+COPY ProductService.Tests/*.csproj ./ProductService.Tests/ 
 
 RUN dotnet restore
 

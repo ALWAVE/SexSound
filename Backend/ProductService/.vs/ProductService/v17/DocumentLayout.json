@@ -38,21 +38,19 @@
               "RelativeToolTip": "ProductService.Domain\\Entities\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T11:32:05.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T11:32:05.754Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductService.Tests",
+              "Title": "ProductService.Tests.csproj",
               "DocumentMoniker": "D:\\ProjectVS\\AutoSoundProject\\Backend\\ProductService\\ProductService.Tests\\ProductService.Tests.csproj",
               "RelativeDocumentMoniker": "ProductService.Tests\\ProductService.Tests.csproj",
               "ToolTip": "D:\\ProjectVS\\AutoSoundProject\\Backend\\ProductService\\ProductService.Tests\\ProductService.Tests.csproj",
               "RelativeToolTip": "ProductService.Tests\\ProductService.Tests.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-28T11:26:01.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T11:26:01.38Z"
             },
             {
               "$type": "Document",

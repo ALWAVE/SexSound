@@ -15,7 +15,7 @@ services:
 
   productservice:
     build:
-      context: .
+      context: ./Backend/ProductService
       dockerfile: ProductService.API/Dockerfile
     container_name: product_service
     depends_on:
@@ -26,6 +26,16 @@ services:
     ports:
       - "8080:80"
     working_dir: /app
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"     # для кода
+      - "15672:15672"   # для браузера (RabbitMQ UI)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
 
 volumes:
   pgdata:
