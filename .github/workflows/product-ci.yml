@@ -11,19 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: 📥 Checkout code
       uses: actions/checkout@v3
 
-    - name: Setup .NET
+    - name: 🧰 Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '8.0.x'
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: 📦 Restore dependencies
+      run: dotnet restore Backend/ProductService/ProductService.sln
 
-    - name: Build
-      run: dotnet build --no-restore --configuration Release
+    - name: 🔨 Build
+      run: dotnet build Backend/ProductService/ProductService.sln --no-restore --configuration Release
 
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: 🧪 Run tests
+      run: dotnet test Backend/ProductService/ProductService.sln --no-build --verbosity normal
